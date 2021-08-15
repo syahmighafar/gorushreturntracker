@@ -324,13 +324,13 @@ function tracknumber(){
                                             checkDate()
 
                                             var para = document.createElement("P" + i);
-                                            para.innerHTML = getTime() + " - " + "<b>Out For Delivery</b>" + "<br><br>";
+                                            para.innerHTML = getTime() + " - " + "<b>In transit to Zalora</b>" + "<br><br>";
                                             document.getElementById("trackinghistorydetails").appendChild(para);
 
                                             countfacility = 0;
                                             
                                             finaldatewithtime = getFullDateWithDayandTime();
-                                            finalstatus = "Out For Delivery";
+                                            finalstatus = "In transit to Zalora";
                                         }
 
                                         if(json_responsejd.data[0].task_history[i].description.includes('Arrived at')){
